@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Daoreaders</title>
+    <meta charset="utf-8"/>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta" rel="stylesheet">
+    <link rel="stylesheet" href="css/wuxia.css">
+    <!-- <link rel="stylesheet" media="(max-width 800px)" href="css/media-queries.css"/> 
+    aca podriamos colocar  una hoja de estilo externa-->
+
+</head>
+
+<body>
+
+    <section id="Portada" class="portada ">       <!-- Portada          -->
+      <header id="header" class="header contenedor">        <!-- header Logotipo    -->
+
+      <figure class="logotipo">
+          <img src= "../SkyeReaders/images/Wuxia-Rojo-y-Blanco.png" width="200" height="90" alt="Wuxia logo"/>
+      </figure>
+      <nav class="menu">       <!--menu     -->
+          <ul>
+              <li>
+                  <a href="index.html"> Home </a>
+              </li>
+              <li>
+                  <a href="#wuxia"> Wuxia </a>
+              </li>
+              <li>
+                  <a href="precios.html"> Precios </a>
+                  </li>
+              </ul>
+      </nav>
+      </header>
+  <div class="contenedor">
+        <h1 class="titulo"><span>Sky</span>readers</h1>
+        <h3 class="title-a"> Online translators for web content, novels, xianxia, fiction and wuxia </h3>     <!-- Resumen -->
+        <a button class="button" href="precios.html" >  More    </button></a>           <!-- Boton -->
+  </div>
+</section>
+    <section id="wuxia" class="wuxia contenedor">                                               <!-- Novelas -->
+    <h2> Nuestros Generos   </h2>
+    <article class="protas">
+            <img class="derecha "src="images/leehyun.png" alt="princial-el legendario escultor" width="350"/>
+            <div class="contenedor-protas-a">
+    <h3 class="title-b"> Nuestros Wuxia </h3>
+    <ol>
+        <li>El legendario escultor lunar</li>
+        <li>Liberen a esa bruja</li>
+        <li>Overlord</li>
+    </div>
+    </ol>
+</article>
+<article class="protas">
+<img class="izquierda" src="images/Chu_feng.jpg" alt="Chufeng mga" width="350"/>
+<div class="contenedor-protas-b">
+
+<h3 class="title-b">Nuestros Xianxia </h3>
+<ol>
+    <li>Mortal inmortal</li>
+    <li>Martial world</li>
+    <li>Martial God Asura</li>
+</div>
+</ol>
+</article>
+
+
+      </section>
+      <footer class="footer">
+        <div class="contenedor">
+          <div class="contacto">
+          <img src="../SkyeReaders/images/Wuxia-Rojo-y-Blanco.png" width="254"alt="logotipo"/>
+          <a href="tel:+5802812711564 "><strong>Telefono</strong><span> 04266200555 </span></a>
+          <a href="mailto:contacto@Daoreaders.com"><strong>E-mail</strong><span>contacto@Daoreaders.com</span>
+    </div>
+    <form class="formulario">
+      
+                  <div class="col1">
+                      <label for="nombre">Nombre</label>
+                      <!--   <input type="text" required id="nombre" name="nombre"/> -->
+                      <!-- la linea de codigo comentada
+                        en la linea 78 la elime ya que me duplicada la casilla del formulario nombre
+                      con el name obtendremos el resultado de la selection es hombre ó es mujer -->
+                    
+                      <input type="email" required id="email" name="email"/>
+                <div class="sexo">
+                              <label for="mujer">
+                        <input type="radio" id="mujer" name="sexo" value="mujer">Mujer
+                      </label>
+
+                  <label for="hombre">
+                    <input type="radio" id="hombre" name="sexo" value="hombre">Hombre
+                  </label>
+                </div>
+      <div class="intereses">
+        <label for="cotizacion">
+        <input type="checkbox" id="cotizacion" name="intereses" value="Cotizacion">Cotizacion</label>
+      <label for="reclamos">
+      <input type="checkbox" id="reclamos" name="intereses" value="reclamos">reclamos</label>
+      <label for="comentarios">
+      <input type="checkbox" id="cotizacion" name="intereses" value="comentarios">comentarios</label>
+    <label for="otros">
+    <input type="checkbox" id="cotizacion" name="intereses" value="otros">Otros </label>
+      </div>
+    </div>
+    <div class="col2">
+
+          <label for="comentarios">Comentarios</label>
+          <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+          <input type="submit" value="Enviar" class="button"/>
+        </div>
+        </form>
+      </div>
+      </footer>
+</body>
+</html>

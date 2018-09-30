@@ -1,0 +1,268 @@
+/* font-family: 'Montserrat Alternates', sans-serif;
+ */
+ /* font-family: 'Allerta', sans-serif;*/
+/* font-family: 'Allerta', sans-serif;*/
+/*  *{
+   width: tamaño;
+  height: tamaño;
+ padding:  10px ;
+ padding-top:10px;
+padding-right:13px;
+padding-left: 15px;
+padding-bottom: 5px;
+padding: 10px 13px 5px 15px
+margin: 10px;
+ margin-top: 10px;
+  margin-right: 13px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+border: 2px solid red;
+} */
+body{
+      font-family: 'Allerta', sans-serif;
+      margin: 0px;
+}
+
+.button {
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 7px 12px;
+  font-size: 18px;
+  background: linear-gradient(to left, #fe344e, #ff7250)
+
+}
+.titulo{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 70px;
+    margin-bottom: 15px;
+    margin-top: 70px;
+}
+.titulo span{
+  text-decoration: underline;
+}
+.title-a{
+    font-size: 40px;
+}
+.title-b{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.wuxia {
+    color: #1f313c;
+
+}
+
+.wuxia h2{
+    font-size: 35px;
+}
+.portada{
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    color: white;
+    padding: -20px;
+    height: 530px;
+    }
+.portada button{
+  margin-bottom: 70px;
+}
+.menu{
+    font-size: 24px;
+    display: inline-block;
+    position: relative;
+    right: 0px;
+
+}
+
+/* 6 Pseudoelementos y entidades */
+.menu li:before{
+  content: '☆';
+  font-size: 30px;
+  line-height: 20px;
+  color: white;
+}
+.menu li{
+  display: inline-block;
+  margin-left: 30px;
+}
+.menu a{
+  color: #ba2f2f;
+  text-decoration: none;
+}
+.logotipo{
+  display: inline-block;
+  margin-left: 0;
+}
+
+.contenedor{
+  max-width: 800px;
+  margin: auto;
+}
+.background{
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+}
+
+.protas{
+  margin: 10px;
+  padding: 10px;
+  /*overflow: hidden;*/
+  border: 1px solid #1f313c;
+  border-radius: 8px;
+
+  }
+  .wuxia ol{
+    padding: 0px;
+  }
+
+.derecha{
+  float: right;
+  position: relative;
+  top: -100px;
+}
+.izquierda{
+float: left;
+position: relative;
+top: 80px;
+}
+.contenedor-protas-a{
+  padding-left: 20px;
+}
+
+.contenedor-protas-b{
+  margin-left: 370px;
+  position: relative;
+
+}
+.header{
+  position: relative;
+}
+.footer{
+  background: #273b47;
+}
+
+
+.contacto{
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.contacto img{
+  display: block;
+}
+.contacto strong{
+  display: block;
+}
+
+.contacto a{
+  color: white;
+  text-decoration: none;
+  margin: 10px 10px 10px 0;
+}
+.footer .contenedor{
+  display: flex;
+  justify-content: space-between;
+}
+.formulario{
+  display: flex;
+  width: 400px;
+  color: white;
+  padding: 26px 139px;
+  text-decoration: none;
+
+  }
+
+.col1, .col2{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.col1
+{
+  margin-right: 15px;
+
+}
+.col2{
+  align-items: flex-start;
+}
+.intereses label{
+  font-size: 12px;
+}
+
+.fomulario label, .sexo, .intereses{
+margin-bottom:   10px;
+}
+
+.sexo{
+  margin-top: 10px;
+}
+table{
+  width: 85%;
+  margin: 70px;
+ALIGN-SELF: CENTER;
+
+}
+th{
+  background: #273b47;
+color: white;
+
+
+}
+th{
+  padding: 10px;
+}
+
+td{
+  padding: 20px;
+  text-align: center;
+  text-align: justify;
+}
+table, td, td{
+  border: 1px solid #273b47;
+  border-collapse: collapse;
+}
+
+input:focus, textarea:focus{
+  background: lightgray;
+}
+.a{
+  text-decoration: none;
+}
+@media screen and (max-width: 800px){
+  /* body{
+    border: 10px solid red;
+  }
+  /* .contenedor{
+    width: auto;
+    max-width: 800px;
+  } */ 
+  .titulo{
+    font-size: 45px;
+    margin-top: 30px;
+  }
+  .title-a{
+font-size: 24px;
+  }
+  .portada{
+    height: auto;
+  }
+  .portada .button{
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+  .protas .contenedor-protas-a .contenedor-protas-b {
+    text-align: center;
+    float: none;
+  }
+  .izquierda .derecha{
+    float: none;
+    position: static;
+  }
+  
+  
+}
+
