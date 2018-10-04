@@ -1,3 +1,43 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?6um7mc');
+  src:  url('../fonts/icomoon.eot?6um7mc#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?6um7mc') format('truetype'),
+    url('../fonts/icomoon.woff?6um7mc') format('woff'),
+    url('../fonts/icomoon.svg?6um7mc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-cloase:before {
+  content: "\ea0d";
+}
+
+
 /* font-family: 'Montserrat Alternates', sans-serif;
  */
  /* font-family: 'Allerta', sans-serif;*/
@@ -24,7 +64,7 @@ body{
 }
 
 .button {
-  border-radius: 5px;
+  border-radius: 12px;
   border: none;
   color: white;
   cursor: pointer;
@@ -71,7 +111,7 @@ body{
 .menu{
     font-size: 24px;
     display: inline-block;
-    position: relative;
+    position: absolute;
     right: 0px;
 
 }
@@ -104,37 +144,32 @@ body{
   background-image: url('../images/background.jpg');
   background-size: cover;
 }
-
 .protas{
   margin: 10px;
   padding: 10px;
   /*overflow: hidden;*/
   border: 1px solid #1f313c;
   border-radius: 8px;
-
   }
   .wuxia ol{
     padding: 0px;
   }
-
 .derecha{
   float: right;
-  position: relative;
-  top: -100px;
+  position: static;
+  top: -9px;
 }
 .izquierda{
 float: left;
 position: relative;
-top: 80px;
+margin: 40px;
 }
 .contenedor-protas-a{
   padding-left: 20px;
 }
-
 .contenedor-protas-b{
   margin-left: 370px;
   position: relative;
-
 }
 .header{
   position: relative;
@@ -142,8 +177,6 @@ top: 80px;
 .footer{
   background: #273b47;
 }
-
-
 .contacto{
   display: flex;
   width: 300px;
@@ -156,8 +189,7 @@ top: 80px;
 .contacto strong{
   display: block;
 }
-
-.contacto a{
+.contacto, a{
   color: white;
   text-decoration: none;
   margin: 10px 10px 10px 0;
@@ -170,21 +202,16 @@ top: 80px;
   display: flex;
   width: 400px;
   color: white;
-  padding: 26px 139px;
+  padding: 20px 10px;
   text-decoration: none;
-
   }
-
 .col1, .col2{
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-
 }
-
 .col1
 {
   margin-right: 15px;
-
 }
 .col2{
   align-items: flex-start;
@@ -192,11 +219,9 @@ top: 80px;
 .intereses label{
   font-size: 12px;
 }
-
 .fomulario label, .sexo, .intereses{
 margin-bottom:   10px;
 }
-
 .sexo{
   margin-top: 10px;
 }
@@ -204,13 +229,10 @@ table{
   width: 85%;
   margin: 70px;
 ALIGN-SELF: CENTER;
-
 }
 th{
   background: #273b47;
 color: white;
-
-
 }
 th{
   padding: 10px;
@@ -232,20 +254,26 @@ input:focus, textarea:focus{
 .a{
   text-decoration: none;
 }
-@media screen and (max-width: 800px){
-  /* body{
-    border: 10px solid red;
+
+@media screen and (max-width: 800px)
+{
+  body{
+    border: 10px solid blue;
   }
   /* .contenedor{
     width: auto;
     max-width: 800px;
-  } */ 
+  }    */
   .titulo{
     font-size: 45px;
     margin-top: 30px;
   }
   .title-a{
 font-size: 24px;
+  }
+  .title-b{
+    margin: 0;
+    margin-bottom: 0;
   }
   .portada{
     height: auto;
@@ -254,15 +282,124 @@ font-size: 24px;
     margin-bottom: 30px;
     display: inline-block;
   }
-  .protas .contenedor-protas-a .contenedor-protas-b {
+  .protas, .contenedor-protas-a, .contenedor-protas-b {
     text-align: center;
     float: none;
   }
-  .izquierda .derecha{
+  .izquierda, .derecha{
     float: none;
     position: static;
+    margin: 0;
   }
-  
-  
+  .protas li{
+    list-style: none;
+  }
+  .protas.b, .izquierda{
+    height: auto;
+      }
+      .contenedor-protas-b {
+         margin-left: 0; 
+        position: static;
 }
-
+  .contenedor-protas-a{
+    position: static;
+    margin: 0;
+  }
+  .contenedor-protas-b{
+    padding: 0;
+  }
+  @media screen and (max-width:768px){
+.footer .contenedor{
+  display: block;
+  }
+  .contacto{
+    margin: 0 auto;
+  }
+  .col1{
+    display: flex;
+  }
+  .formulario{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    }
+    .intereses label {
+     display: block;
+     font-size: 16px;
+    }
+    .col1{
+      margin: 0;
+    }
+      input[type="text"],
+      input[type="email"]      
+      {
+      font-size: 16px;
+      padding: 5px;
+    }
+    textarea{
+      width: 100%;
+    }
+    input[type="radio"],
+    input[type="checkbox"]      
+    {
+    zoom: 1.5;
+  }
+/* footer */
+  }
+@media screen and (max-width:650px){
+  .header{
+    text-align: center;
+      }
+  .logotipo{
+    margin: 0;
+  }
+  .menu{
+    position: static;
+    display: block;
+    text-align: center;
+    }
+   
+    .menu li:first-child{  /*  permite eliminar caracteristicas especificas del primer hijo*/
+      margin: 0;
+    }
+    .menu ul{
+      padding: none;
+    }
+ }
+ @media screen and (max-width: 500px){ 
+   /* portada */
+  .menu li{
+    display: block;
+    margin: 0;
+    padding: 8px 0;
+    border-bottom:1px solid white; /* solo afecta los bordesubicados abajo, los bordes tambien funcionan como los margenes y los padding en su sintaxis alargada */
+      }
+      menu li:before{  /*  permite ajustar la disposition del elemento, utilizando display*/
+        display: none;
+      }
+      .menu li:first-child{  /*  de esta manera coloca una linea en el margen superior */
+        border-top: 1px solid white; 
+      }
+    .portada{
+      text-align: center;
+    }
+    .titulo{
+      font-size: 35px;
+      }
+      .title-a{
+        font-size: 16px;
+      }
+      /* portadada */
+      
+      /*  der*/
+      .derecha img{
+        width: 200px;
+        /* height: auto; */
+      }
+      .title-b{
+        font-size: 30px;
+      }
+      
+      
+      /*  izq*/
+    }
