@@ -2,123 +2,154 @@
 <html>
 
 <head>
-    <title>Daoreaders</title>
-    <meta charset="utf-8"/>
-      <link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta" rel="stylesheet">
-    <link rel="stylesheet" href="css/wuxia.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!-- <link rel="stylesheet" media="(max-width 800px)" href="css/media-queries.css"/> 
+  <title>Daoreaders</title>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta" rel="stylesheet">
+  <link rel="stylesheet" href="css/wuxia.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!-- <link rel="stylesheet" media="(max-width 800px)" href="css/media-queries.css"/> 
     aca podriamos colocar  una hoja de estilo externa-->
 
 </head>
+
 <body>
 
-    <section id="Portada" class="portada ">       <!-- Portada          -->
-      <header id="header" class="header contenedor">        <!-- header Logotipo    -->
+  <section id="Portada" class="portada ">
+    <!-- Portada          -->
+    <header id="header" class="header contenedor">
+      <!-- header Logotipo    -->
 
       <figure class="logotipo">
-          <img src= "../SkyReaders/images/Wuxia-Rojo-y-Blanco.png" width="200" height="90" alt="Wuxia logo"/>
+        <img src="images/Wuxia-Rojo-y-Blanco.png" srcset="images/Wuxia-Rojo-y-Blanco.png" width="200" height="90" alt="Wuxia logo" />
       </figure>
       <span class="burguer-button icon-menu" id="burguer-button"></span>
-      <nav class="menu" id="menu">       <!--menu     -->
-          <ul>
-              <li>
-                  <a href="index.html"> Home </a>
-              </li>
-              <li>
-                  <a href="#wuxia"> Wuxia </a>
-              </li>
-              <li>
-                  <a href="precios.html"> Precios </a>
-                  </li>
-              </ul>
+      <nav class="menu" id="menu">
+        <!--menu     -->
+        <ul>
+          <li>
+            <a href="index.html"> Home </a>
+          </li>
+          <li>
+            <a href="#wuxia"> Wuxia </a>
+          </li>
+          <li>
+            <a href="precios.html"> Precios </a>
+          </li>
+        </ul>
       </nav>
-      </header>
-  <div class="contenedor">
-        <h1 class="titulo"><span>Sky</span>readers</h1>
-        <h3 class="title-a"> Online translators for web content, novels, xianxia, fiction and wuxia </h3>     <!-- Resumen -->
-        <a button class="button" href="precios.html" >  More    </button></a>           <!-- Boton -->
-  </div>
-</section>
-    <section id="wuxia" class="wuxia contenedor">                                               <!-- Novelas -->
-    <h2> Nuestros Generos   </h2>
-    <article class="protas a">
-            <img class="derecha" src="images/week.jpg" alt="princial-el legendario escultor" width="200"/>
-            <div class="contenedor-protas-a">
-    <h3 class="title-b"> Nuestros Wuxia </h3>
-    <ol>
-        <li>El legendario escultor lunar</li>
-        <li>Liberen a esa bruja</li>
-        <li>Overlord</li>
+    </header>
+    <div class="contenedor">
+      <h1 class="titulo"><span>Sky</span>readers</h1>
+      <h3 class="title-a"> Online translators for web content, novels, xianxia, fiction and wuxia </h3>
+      <!-- Resumen -->
+      <a button class="button" href="precios.html"> More </button></a> <!-- Boton -->
     </div>
-    </ol>
-</article>
-<article class="protas b">
-<img class="izquierda" src="images/Chu_feng.jpg" alt="Chufeng mga" width="200"/>
-<div class="contenedor-protas-b">
-
-<h3 class="title-b">Nuestros Xianxia </h3>
-<ol>
-    <li>Mortal inmortal</li>
-    <li>Martial world</li>
-    <li>Martial God Asura</li>
-</div>
-</ol>
-</article>
-
-<!--  -->
-      </section>
-      <footer class="footer">
-        <div class="contenedor">
-          <div class="contacto">
-          <img src="../SkyReaders/images/Wuxia-Rojo-y-Blanco.png" width="200"alt="logotipo"/>
-          <a href="tel:+5802812711564 "><strong>Telefono</strong><span> 04266200555 </span></a>
-          <a href="mailto:contacto@Daoreaders.com"><strong>E-mail</strong><span>contacto@Daoreaders.com</span>
+  </section>
+  <section id="wuxia" class="wuxia contenedor">
+    <!-- Novelas -->
+    <h2> Nuestros Generos </h2>
+    <div class="video-responsive-contenedor">
+        <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/2TftIdyX510" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
-    <form class="formulario">
-      
-                  <div class="col1">
-                      <label for="nombre">Nombre</label>
-                      <input type="text" required id="nombre" name="nombre"/>
-                      <label for="email">E-mail</label>    
-                      <input type="email" required id="email" name="email"/>
-                <div class="sexo">
-                              <label for="mujer">
-                        <input type="radio" id="mujer" name="sexo" value="mujer">Mujer
-                      </label>
-
-                  <label for="hombre">
-                    <input type="radio" id="hombre" name="sexo" value="hombre">Hombre
-                  </label>
-                </div>
-      <div class="intereses">
-        <label for="cotizacion">
-        <input type="checkbox" id="cotizacion" name="intereses" value="Cotizacion">Cotizacion</label>
-      <label for="reclamos">
-      <input type="checkbox" id="reclamos" name="intereses" value="reclamos">reclamos</label>
-      <label for="comentarios">
-      <input type="checkbox" id="cotizacion" name="intereses" value="comentarios">comentarios</label>
-    <label for="otros">
-    <input type="checkbox" id="cotizacion" name="intereses" value="otros">Otros </label>
+      <article class="protas a">
+      <img class="derecha" data-src="images/week.jpg" alt="princial-el legendario escultor" width="200" />
+      <div class="contenedor-protas-a">
+        <h3 class="title-b"> Nuestros Wuxia </h3>
+        <ol>
+          <li>El legendario escultor lunar</li>
+          <li>Liberen a esa bruja</li>
+          <li>Overlord</li>
       </div>
-    </div>
-    <div class="col2">
+      </ol>
+    </article>
+    <article class="protas b">
+      <img class="izquierda" data-src="images/Chu_feng.jpg" alt="Chufeng mga" width="200" />
+      <div class="contenedor-protas-b">
+
+        <h3 class="title-b">Nuestros Xianxia </h3>
+        <ol>
+          <li>Mortal inmortal</li>
+          <li>Martial world</li>
+          <li>Martial God Asura</li>
+      </div>
+      </ol>
+    </article>  
+  </section>
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="contacto">
+        <img data-src="images/Wuxia-Rojo-y-Blanco.png" width="200" alt="logotipo" />
+        <a href="tel:+5802812711564 "><strong>Telefono</strong><span> 04266200555 </span></a>
+        <a href="mailto:contacto@Daoreaders.com"><strong>E-mail</strong><span>contacto@Daoreaders.com</span>
+      </div>
+      <form class="formulario">
+
+        <div class="col1">
+          <label for="nombre">Nombre</label>
+          <input type="text" required id="nombre" name="nombre" />
+          <label for="email">E-mail</label>
+          <input type="email" required id="email" name="email" />
+          <div class="sexo">
+            <label for="mujer">
+              <input type="radio" id="mujer" name="sexo" value="mujer">Mujer
+            </label>
+
+            <label for="hombre">
+              <input type="radio" id="hombre" name="sexo" value="hombre">Hombre
+            </label>
+          </div>
+          <div class="intereses">
+            <label for="cotizacion">
+              <input type="checkbox" id="cotizacion" name="intereses" value="Cotizacion">Cotizacion</label>
+            <label for="reclamos">
+              <input type="checkbox" id="reclamos" name="intereses" value="reclamos">reclamos</label>
+            <label for="comentarios">
+              <input type="checkbox" id="cotizacion" name="intereses" value="comentarios">comentarios</label>
+            <label for="otros">
+              <input type="checkbox" id="cotizacion" name="intereses" value="otros">Otros </label>
+          </div>
+        </div>
+        <div class="col2">
 
           <label for="comentarios">Comentarios</label>
           <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
-          <input type="submit" value="Enviar" class="button"/>
+          <input type="submit" value="Enviar" class="button" />
         </div>
-        </form>
-      </div>
-      </footer>
-      <script>
-      var $burguerButton = document.getElementById('burguer-button');
-      var $menu = document.getElementById('menu');
-      $burguerButton,addEventListener('Touchstart', function(){
-        menu.classList.toggle('active')
-      });
-        
+      </form>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+  <script>    
+          var consulta = window.matchMedia('(max-width: 500px)');
+          consulta.addListener(mediaQuery);
+
+          var $burguerButton = document.getElementById('burguer-button');
+          var $menu = document.getElementById('menu');
+          function toggleMenu(){
+              $menu.classList.toggle('active')
+            };
+
+          function mediaQuery()
+                  {
+                      if (consulta.matches)
+                      {
+                        console.log ('se cumplio la condicion');
+                        $burguerButton.addEventListener('touchstart', toggleMenu);
+                      }
+                      else 
+                      {
+                        $burguerButton.removeEventListener('touchstart', toggleMenu);
+                        console.log ('no se cumplio la condicion');
+                      }
+                  }
+            mediaQuery();
+            //lazy loading
+            var blazy = new Blazy({
+
+          //options
+              selector: 'img'
+            })
+
       </script>
-      <!-- (que evento, queremos hacer) -->
 </body>
 </html>
