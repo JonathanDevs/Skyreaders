@@ -48,9 +48,13 @@
   <section id="wuxia" class="wuxia contenedor">
     <!-- Novelas -->
     <h2> Nuestros Generos </h2>
-    <div class="video-responsive-contenedor">
-        <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/2TftIdyX510" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
+      <div class="video-demo-contenedor">
+          <div class="video-demo">
+            <div class="video-responsive-contenedor">
+            <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/2TftIdyX510" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
       <article class="protas a">
       <img class="derecha" data-src="images/week.jpg" alt="princial-el legendario escultor" width="200" />
       <div class="contenedor-protas-a">
@@ -118,6 +122,7 @@
       </form>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
   <script>    
           var consulta = window.matchMedia('(max-width: 500px)');
@@ -126,9 +131,14 @@
           var $burguerButton = document.getElementById('burguer-button');
           var $menu = document.getElementById('menu');
           function toggleMenu(){
-              $menu.classList.toggle('active')
+              $menu.classList.toggle('active');
             };
-
+            function showMenu(){
+              $menu.classList.add('active');
+            };
+            function hideMenu(){
+              $menu.classList.remove('active');
+            };
           function mediaQuery()
                   {
                       if (consulta.matches)
@@ -148,7 +158,15 @@
 
           //options
               selector: 'img'
-            })
+
+            });
+            var $body = document.body;
+
+            var gestos = new Hammer($body);
+              gestos.on('swipeleft', hideMenu); 
+              gestos.on('swiperight', showMenu);
+             
+              
 
       </script>
 </body>
