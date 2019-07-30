@@ -90,8 +90,8 @@ body{
 }
 .menu{
     font-size: 24px;
-    display: inline-block;
-    position: static;
+    display: inline-flex;
+    position: relative;
     right: 0px;
 
 }
