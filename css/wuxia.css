@@ -38,27 +38,6 @@
   content: "\ea0d";
 }
 
-
-/* font-family: 'Montserrat Alternates', sans-serif;
- */
- /* font-family: 'Allerta', sans-serif;*/
-/* font-family: 'Allerta', sans-serif;*/
-/*  *{
-   width: tamaño;
-  height: tamaño;
- padding:  10px ;
- padding-top:10px;
-padding-right:13px;
-padding-left: 15px;
-padding-bottom: 5px;
-padding: 10px 13px 5px 15px
-margin: 10px;
- margin-top: 10px;
-  margin-right: 13px;
-  margin-left: 15px;
-  margin-bottom: 5px;
-border: 2px solid red;
-} */
 body{
       font-family: 'Allerta', sans-serif;
       margin: 0px;
@@ -112,7 +91,7 @@ body{
 .menu{
     font-size: 24px;
     display: inline-block;
-    position: fixed;
+    position: static;
     right: 0px;
 
 }
@@ -503,7 +482,7 @@ input:focus, textarea:focus{
     width: 100%;
     height: 100%;
   }
-  /* footer */
+  /* footer  */
   .col2 {
     align-items: stretch;
   }
